@@ -102,3 +102,8 @@ dist
 
 # TernJS port file
 .tern-port
+
+.DS_Store
+02-Challenge/INSTRUCTIONS-README.md
+02-Challenge/Assets/11-express-homework-demo-01.png
+02-Challenge/Assets/11-express-homework-demo-02.png
