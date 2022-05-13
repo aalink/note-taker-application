@@ -1,10 +1,10 @@
-const apiRoutes = require("./routes/apiroutes")
+// const apiRoutes = require("./routes/apiroutes")
 const htmlRoutes = require("./routes/htmlroutes")
 const express = require("express")
 
 const app = express();
 
-const PORT = 3001
+const PORT = process.env.PORT || 3001
 
 app.use(express.json());
 app.use(express.urlencoded({
@@ -13,7 +13,7 @@ app.use(express.urlencoded({
 
 app.use(express.static("public"))
 
-app.use("/api", apiRoutes)
+// app.use("/api", apiRoutes)
 app.use("/", htmlRoutes)
 
 
